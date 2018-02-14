@@ -13,22 +13,46 @@ public class Tune
 		return title;
 	}
 
-	public void setTitle(String title)
+	public String getAltTitle()
+	{
+		return altTitle;
+	}
+
+	public String getNotation()
+	{
+		return notation;
+	}
+
+	public int getX()
+	{
+		return x;
+	}
+
+	public void setTitle(String title, String altTitle, String notation, int x)
 	{
 		this.title = title;
+		this.altTitle = altTitle;
+		this.notation = notation;
+		this.x = x;
+	}
+
+	public Tune(String title, String altTitle, String notation, int x)
+	{
+		setTitle(title, altTitle, notation, x);
 	}
 
 
-	/*public String toString()
+	public String toString()
 	{
-		Stringbuffer sb = new StringBuffer();
-		for (String tune:tunes)
+		StringBuffer sb = new StringBuffer();
+		for (String tunename: tunes)
 		{
-			sb.append(tune + ",");	
+			sb.append(tunename + ",");	
 		}
 
 		return sb.toString();
+
 	}
-*/
+
 
 }

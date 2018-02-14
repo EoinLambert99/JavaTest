@@ -9,13 +9,30 @@ public class TuneBook
 {
 	ArrayList<String> tunes = new ArrayList<String>();
 
+	public String toString()
+	{
+		StringBuffer sb = new StringBuffer();
+		for(String tune:tunes)
+		{
+			sb.append(tune + ", ");
+		}
+
+		return sb.toString();
+
+	}
+/*
+	public void out()
+	{
+		System.out.println();
+	}*/
+
 	public void loadSongs()
 	{
 		BufferedReader inputStream = null;
 
 		try
 		{
-			inputStream = new BufferedReader(new FileReader("songs.txt"));
+			inputStream = new BufferedReader(new FileReader("hnj0.abc.txt"));
             
             String l;
             while ((l = inputStream.readLine()) != null)
@@ -44,4 +61,15 @@ public class TuneBook
 		}
 	}
 	
+
+	public static void main(String[] args)
+	{
+		System.out.println(tune + ", ");
+		/*
+		TuneBook tb = new TuneBook("hnj0.abc");
+		System.out.println(tb);
+		*/
+	}
+
+
 }
