@@ -60,12 +60,28 @@ public class TuneBook
 			}
 		}
 	}
+
+	//Trying to retunr first matching tune from array list that contains parameter title in title of tune
+	/*public Tune findTune(String title)
+	{
+
+		if(title == tunes)
+		{
+			return title;
+		}
+		else 
+		{
+			count++;
+		}
+
+	}
+	*/
 	
 
 	public static void main(String[] args)
 	{
-		System.out.println(tune + ", ");
-		/*
+		/*System.out.println(tunes + ", ");
+		
 		TuneBook tb = new TuneBook("hnj0.abc");
 		System.out.println(tb);
 		*/

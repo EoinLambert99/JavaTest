@@ -45,9 +45,9 @@ public class Tune
 	public String toString()
 	{
 		StringBuffer sb = new StringBuffer();
-		for (String tunename: tunes)
+		for (String tune:tunes)
 		{
-			sb.append(tunename + ",");	
+			sb.append(tune + ", ");	
 		}
 
 		return sb.toString();
